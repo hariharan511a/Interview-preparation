@@ -23,3 +23,25 @@ public class Main {
     }
 }
 ```
+<h5>Swapping number</h5>
+
+```Java
+import java.util.*;
+public class Mian {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter FirstValue: ");
+        int a = scan.nextInt();
+
+        System.out.print("Enter SecoundValue: ");
+        int b = scan.nextInt();
+        System.out.println("Before swapping: " + a + " " + b);
+
+        int input = a;
+        a = b;
+        b = input;
+        System.out.println("After swapping: " + a + " " + b);
+    }
+}
+```
