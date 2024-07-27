@@ -3,7 +3,7 @@
 ```Java
 import java.util.*;
 
-public class Mian {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -16,10 +16,10 @@ public class Mian {
         boolean hasVowel = input.contains("a") || input.contains("e") || input.contains("i") || input.contains("o") || input.contains("u");
 
         if (hasVowel) {
-            System.out.println("This is Vowel");
+            System.out.println("This contains a vowel");
         } else {
-            System.out.println("Not vowel handling");
-        }    
+            System.out.println("This does not contain a vowel");
+        }
     }
 }
 ```
