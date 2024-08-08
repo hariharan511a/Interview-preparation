@@ -1,47 +1,23 @@
-<h5>Check vowel words</h5>
+<h5>Logical Programming</h5>
+<ol>
+    <li>Number Programming</li>
+    <li>String Programming</li>
+    <li>Array Programming</li>
+    <li>Pattern Programming</li>
+</ol>
+<h5>Number Programming</h5>
+<p>1. Java program to check if the given number is  a odd or even number ?</p>
+<p>Using Bitwise AND Operator</p>
 
 ```Java
-import java.util.*;
-
 public class Main {
-
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter value: ");
-
-        String input = scan.nextLine();
-
-        input = input.toLowerCase();
-
-        boolean hasVowel = input.contains("a") || input.contains("e") || input.contains("i") || input.contains("o") || input.contains("u");
-
-        if (hasVowel) {
-            System.out.println("This contains a vowel");
+        int num = 23;
+        if ((num & 1) == 0) {
+            System.out.println("even number"); // 23 & 1 = 1, 1 == 0
         } else {
-            System.out.println("This does not contain a vowel");
+            System.out.println("odd number");
         }
-    }
-}
-```
-<h5>Swapping number</h5>
-
-```Java
-import java.util.*;
-public class Mian {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.print("Enter FirstValue: ");
-        int a = scan.nextInt();
-
-        System.out.print("Enter SecoundValue: ");
-        int b = scan.nextInt();
-        System.out.println("Before swapping: " + a + " " + b);
-
-        int input = a;
-        a = b;
-        b = input;
-        System.out.println("After swapping: " + a + " " + b);
     }
 }
 ```
